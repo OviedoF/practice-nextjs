@@ -2,12 +2,17 @@ import { useRouter } from "next/router";
 import Layout from "../../components/layout";
 import OnlyPost from "../../components/posts/onlyPost";
 import Title from '../../components/title';
+import Head from "next/dist/shared/lib/head";
 
 function Post({post}) {
     const router = useRouter();
 
     return ( 
         <Layout>
+
+            <Head>
+                <title>Post #{post.id}</title>
+            </Head>
             <Title>Post Details</Title>
 
             <OnlyPost post={post}></OnlyPost>

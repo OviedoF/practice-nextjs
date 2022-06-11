@@ -1,0 +1,22 @@
+.postContainer{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+
+    .card{
+        background-color: #00000030;
+        border-radius: 20px;
+        width: calc(50% - 20px);
+        margin-left: 10px;
+        margin-top: 10px;
+        padding: 30px;
+        box-sizing: border-box;
+        color: black;
+        text-decoration: none;
+
+        h3{
+            text-align: center;
+            text-decoration: underline;
+        }
+    }
+}
